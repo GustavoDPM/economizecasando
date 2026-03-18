@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Heart, Check, Gift, Calendar, Palette, Home, FileText, Clock, Star, Mail, Shield, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import BonusSection from "@/components/BonusSection";
 import heartImg from "@/assets/heart.png";
 
 const fadeUp = {
