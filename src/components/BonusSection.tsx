@@ -21,7 +21,7 @@ const bonuses = [
     subtitle: "Tudo sob controle do pedido ao grande dia",
     image: bonusChecklist,
     description:
-      "Você terá acesso a uma super "lista de tarefas" + Planner, com tudo que você precisa fazer desde o pedido de casamento, até o Grande dia.",
+      'Você terá acesso a uma super "lista de tarefas" + Planner, com tudo que você precisa fazer desde o pedido de casamento, até o Grande dia.',
     highlight: "Com espaços para anotações, lista de convidados, playlist etc.",
     quote: "Esse bônus é perfeito para manter tudo sob controle e não depender de ninguém na organização.",
     value: "R$97",

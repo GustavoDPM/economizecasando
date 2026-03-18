@@ -158,46 +158,7 @@ const Index = () => {
       </section>
 
       {/* Bonuses */}
-      <section className="bg-gradient-section py-20 px-4">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="max-w-4xl mx-auto"
-        >
-          <motion.div variants={fadeUp} className="text-center mb-14">
-            <p className="text-sm uppercase tracking-widest text-gold font-bold mb-2">Oferta por tempo limitado</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-              Bônus Exclusivos
-            </h2>
-          </motion.div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              { icon: Check, title: "Checklist + Planner", desc: "Lista de tarefas completa do pedido até o grande dia.", value: "R$97" },
-              { icon: Home, title: "Enxoval Completo", desc: "Lista completa de tudo que sua casa nova precisa.", value: "R$27" },
-              { icon: FileText, title: "Casamento Civil", desc: "Documentos, regime de bens e como casar de graça no civil!", value: "R$67" },
-              { icon: Palette, title: "Paleta de Cores", desc: "Cores das madrinhas, mães e decoração resolvidas em minutos!", value: "R$79" },
-              { icon: Calendar, title: "A Data Perfeita", desc: "Baseado em flores, clima e concorrência de cada mês.", value: "R$59" },
-            ].map((bonus, i) => (
-              <motion.div key={i} variants={fadeUp}>
-                <Card className="h-full border border-gold/20 shadow-md bg-card relative overflow-hidden group hover:border-gold/40 transition-colors">
-                  <div className="absolute top-0 right-0 bg-gold text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-lg">
-                    {bonus.value}
-                  </div>
-                  <CardContent className="p-6 pt-8">
-                    <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4">
-                      <bonus.icon className="w-6 h-6 text-gold" />
-                    </div>
-                    <h3 className="font-display text-lg font-semibold text-foreground mb-2">{bonus.title}</h3>
-                    <p className="text-muted-foreground text-sm">{bonus.desc}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
+      <BonusSection />
 
       {/* Pricing */}
       <section id="oferta" className="py-24 px-4">
