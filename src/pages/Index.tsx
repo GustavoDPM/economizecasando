@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import BonusSection from "@/components/BonusSection";
 import heartImg from "@/assets/heart.png";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
