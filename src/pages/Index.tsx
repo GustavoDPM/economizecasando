@@ -57,6 +57,7 @@ const Index = () => {
             <div className="inline-block bg-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider animate-pulse-glow">
               🔥 Último Dia!
             </div>
+            <CountdownTimer />
           </motion.div>
           <motion.div variants={fadeUp} className="mt-10">
             <a href="#oferta">
